@@ -21,6 +21,7 @@ def compute_certificate_id(email):
 > There's an extra "_" added to your email, so the hash is different.
 
 
+
 Then use this hash to get the URL
 
 ```python
@@ -33,6 +34,15 @@ print(url)
 
 Example: https://certificate.datatalks.club/ml-zoomcamp/2023/fe629854d45c559e9c10b3b8458ea392fdeb68a9.pdf
 
+### Using a Docker container to generate the certificate URL
+
+```bash
+# check usage
+docker run --rm ai2ys/machine-learning-zoomcamp:generate-certificate-0.0.0 --help
+
+# default for year is 2023 and course is ml-zoomcamp
+docker run --rm ai2ys/machine-learning-zoomcamp:generate-certificate-0.0.0 <your email address>
+```
 
 ## Adding to LinkedIn
 

@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  certificate:
+    #image: datatalksclub/machine-learning-zoomcamp/generate-certificate
+    image: ai2ys/machine-learning-zoomcamp:generate-certificate-0.0.0
+    build: .
+    hostname: certificate
+    container_name: generate-certificate
